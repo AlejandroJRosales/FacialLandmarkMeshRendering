@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="MessagesMirrorMeLucy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YX4-hk-uvY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrK-W6-RGm">
+                                <rect key="frame" x="132" y="452" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.1579873269" green="0.25131210040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="gQa-8f-Op8"/>
+                                    <constraint firstAttribute="height" constant="56" id="hFi-Ak-EUH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0D-1i-pYx">
+                                <rect key="frame" x="16" y="239" width="288" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" red="0.1579873269" green="0.25131210040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="trailing" secondItem="NrK-W6-RGm" secondAttribute="trailing" constant="132" id="SAk-D9-XnD"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="XJC-FI-iOS"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="trailing" secondItem="LDy-ih-0nr" secondAttribute="trailing" id="aXY-y9-Svk"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" id="cBb-yk-MEu"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="bottom" secondItem="LDy-ih-0nr" secondAttribute="bottom" id="eCU-VU-jBN"/>
+                            <constraint firstItem="NrK-W6-RGm" firstAttribute="leading" secondItem="LDy-ih-0nr" secondAttribute="leading" constant="132" id="fwJ-H9-Afp"/>
+                            <constraint firstItem="LDy-ih-0nr" firstAttribute="bottom" secondItem="NrK-W6-RGm" secondAttribute="bottom" constant="20" id="lMa-S6-nbo"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="qh2-St-KUN"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="ukm-9F-3SA"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="bottom" secondItem="LDy-ih-0nr" secondAttribute="bottom" id="vzt-ND-LLT"/>
+                            <constraint firstItem="YX4-hk-uvY" firstAttribute="trailing" secondItem="LDy-ih-0nr" secondAttribute="trailing" id="zhk-2V-6aP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LDy-ih-0nr"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="NrK-W6-RGm" id="85y-Fw-bvD"/>
+                        <outlet property="imageView" destination="YX4-hk-uvY" id="zbU-sW-mnx"/>
+                        <outlet property="missingFaceLayer" destination="X0D-1i-pYx" id="VVw-iP-gyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="31.484257871064472"/>
+        </scene>
+    </scenes>
+</document>
