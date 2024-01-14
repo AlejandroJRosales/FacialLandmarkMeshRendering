@@ -1,2 +1,2 @@
 # FacialLandmarkMeshRendering
-documentation, note, this code was made in 2018, so it no longer maintained
+Note: The last code modifications were made in 2018, so this code is no longer maintained or being worked on.
